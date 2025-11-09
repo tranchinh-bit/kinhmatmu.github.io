@@ -1,0 +1,6 @@
+<key>NSLocationWhenInUseUsageDescription</key>
+<string>Ứng dụng cần vị trí để hỗ trợ điều hướng và SOS.</string>
+<key>NSMicrophoneUsageDescription</key>
+<string>Ứng dụng cần micro để nhận lệnh giọng nói.</string>
+<key>NSBluetoothAlwaysUsageDescription</key>
+<string>Kết nối kính Bluetooth để phát âm thanh.</string>

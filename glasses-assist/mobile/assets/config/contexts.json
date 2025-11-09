@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "scan_outdoor": {"snapshot_ms":120,"score_thresh":0.55,"nms_iou":0.5,"debounce_frames":2,"tts_gap_sec":1.0,"k_distance":1450,"classes":["person","bicycle","motorcycle","car","bus","truck","pole","dog","cat"]},
+    "scan_indoor": {"snapshot_ms":140,"score_thresh":0.55,"nms_iou":0.5,"debounce_frames":3,"tts_gap_sec":1.2,"k_distance":1300,"classes":["person","chair","bench","pole"]},
+    "crosswalk":   {"snapshot_ms":100,"score_thresh":0.50,"nms_iou":0.5,"debounce_frames":2,"tts_gap_sec":0.9,"k_distance":1500,"classes":["person","car","bus","motorcycle","traffic light","stop sign"]},
+    "quiet_mode":  {"inherit":"scan_indoor","tts_gap_sec":2.0,"quiet":true},
+    "power_save":  {"inherit":"scan_outdoor","snapshot_ms":200,"tts_gap_sec":1.5,"classes":["person","car","pole"]},
+    "ocr_snapshot":{"snapshot_ms":1000,"ocr":true},
+    "standby":     {"snapshot_ms":1000,"disabled":true},
+    "sos":         {"modal":true}
+  }
+}

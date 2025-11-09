@@ -1,0 +1,13 @@
+person
+bicycle
+motorcycle
+car
+bus
+truck
+traffic light
+stop sign
+bench
+chair
+dog
+cat
+pole

@@ -1,0 +1,14 @@
+[Unit]
+Description=Pi Camera RTSP
+After=network-online.target
+
+[Service]
+Environment=FPS=25
+Environment=WIDTH=1280
+Environment=HEIGHT=720
+ExecStart=/usr/local/bin/v4l2rtspserver -W ${WIDTH} -H ${HEIGHT} -F ${FPS} /dev/video0
+Restart=always
+User=pi
+
+[Install]
+WantedBy=multi-user.target
